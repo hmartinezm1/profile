@@ -3,17 +3,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
-// Inline SVG for LinkedIn brand icon (not in lucide-react)
-function LinkedInIcon() {
-  return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-      <rect x="2" y="9" width="4" height="12" />
-      <circle cx="4" cy="4" r="2" />
-    </svg>
-  );
-}
-
 const navLinks = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
@@ -68,16 +57,6 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-
-        <a
-          href="https://www.linkedin.com/in/howard-martinez/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden md:inline-flex btn-primary text-sm py-2 px-4"
-        >
-          <LinkedInIcon />
-          LinkedIn
-        </a>
 
         {/* Mobile toggle */}
         <button

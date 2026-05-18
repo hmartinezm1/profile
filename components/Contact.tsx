@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, MapPin, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 function LinkedInIcon() {
   return (
@@ -29,30 +29,8 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="max-w-xl mx-auto">
-          <div className="card-glass p-8 space-y-4">
-            <a
-              href="mailto:howard.martinez.meza@gmail.com"
-              className="flex items-center gap-4 p-4 rounded-lg transition-colors group"
-              style={{ background: "rgba(255,255,255,0.02)" }}
-            >
-              <div
-                className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
-                style={{ background: "rgba(0,212,255,0.1)" }}
-              >
-                <Mail size={18} style={{ color: "#00d4ff" }} />
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-xs font-medium uppercase tracking-wide mb-0.5" style={{ color: "#64748b" }}>
-                  Email
-                </p>
-                <p className="text-sm font-medium truncate" style={{ color: "#e2e8f0" }}>
-                  howard.martinez.meza@gmail.com
-                </p>
-              </div>
-              <ExternalLink size={14} style={{ color: "#475569" }} className="group-hover:text-cyan-400 transition-colors flex-shrink-0" />
-            </a>
-
+        <div className="max-w-sm mx-auto">
+          <div className="card-glass p-6">
             <a
               href="https://www.linkedin.com/in/howard-martinez/"
               target="_blank"
@@ -62,7 +40,7 @@ export default function Contact() {
             >
               <div
                 className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
-                style={{ background: "rgba(10,102,194,0.15)" }}
+                style={{ background: "rgba(10,102,194,0.15)", color: "#0a66c2" }}
               >
                 <LinkedInIcon />
               </div>
@@ -76,26 +54,6 @@ export default function Contact() {
               </div>
               <ExternalLink size={14} style={{ color: "#475569" }} className="group-hover:text-cyan-400 transition-colors flex-shrink-0" />
             </a>
-
-            <div
-              className="flex items-center gap-4 p-4 rounded-lg"
-              style={{ background: "rgba(255,255,255,0.02)" }}
-            >
-              <div
-                className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
-                style={{ background: "rgba(124,58,237,0.1)" }}
-              >
-                <MapPin size={18} style={{ color: "#a78bfa" }} />
-              </div>
-              <div>
-                <p className="text-xs font-medium uppercase tracking-wide mb-0.5" style={{ color: "#64748b" }}>
-                  Location
-                </p>
-                <p className="text-sm font-medium" style={{ color: "#e2e8f0" }}>
-                  Canóvanas, Puerto Rico
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

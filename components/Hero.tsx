@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { ArrowDown, Mail, FileDown } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import Image from "next/image";
 
 function LinkedInIcon() {
@@ -167,18 +167,6 @@ export default function Hero() {
               >
                 <LinkedInIcon />
                 LinkedIn
-              </a>
-              <a href="mailto:howard.martinez.meza@gmail.com" className="btn-secondary">
-                <Mail size={16} />
-                Get in touch
-              </a>
-              <a
-                href="/howard-martinez-resume.pdf"
-                download
-                className="btn-secondary"
-              >
-                <FileDown size={16} />
-                Resume
               </a>
             </div>
 
